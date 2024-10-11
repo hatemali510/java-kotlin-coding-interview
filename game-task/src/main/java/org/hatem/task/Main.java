@@ -8,7 +8,7 @@ import org.hatem.task.service.GameRunner;
 public class Main {
 
     public static void main(String[] args) {
-        int[] resultTable=new int[3];
+        int[] resultTable;
         GameRunner gameRunner=new GameRunner();
         int gameRounds = 100;
         Player firstPlayer=new Player();

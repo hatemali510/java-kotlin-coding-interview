@@ -22,6 +22,8 @@ public class GameRunner {
     private int[] resultTable=new int[3];
     public void play(Game game){
         for (int i=0;i<game.getGameRounds();i++){
+            game.setFirstPlayerRandomAction();
+            game.setSecondPlayerAction();
             resultTable[(game.getFirstPlayerActionValue()*game.getSecondPlayerActionValue())]++;
         }
     }
